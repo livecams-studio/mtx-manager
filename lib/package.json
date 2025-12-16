@@ -1,0 +1,45 @@
+{
+  "name": "@livecams/mtx-manager",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "zshy": {
+    "exports": {
+      ".": "./src/index.ts"
+    }
+  },
+  "scripts": {
+    "build": "zshy",
+    "dev": "tsx watch src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.11.0",
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "tsx": "^4.21.0",
+    "zshy": "^0.6.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.19.6",
+    "@xstate/store": "^3.13.0",
+    "arkregex": "^0.0.4",
+    "hono": "^4.10.7",
+    "yaml": "^2.8.2",
+    "zod": "^4.1.13"
+  }
+}

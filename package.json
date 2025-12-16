@@ -1,0 +1,6 @@
+{
+  "name": "@livecams/mtx-manager-mono",
+  "private": true,
+  "license": "MIT",
+  "packageManager": "pnpm@10.11.0"
+}
