@@ -257,7 +257,7 @@ import { MediaMTXConfig } from '@livecams/mtx-manager';
 import { handler } from '@livecams/mtx-manager/hono';
 import { busybox, defaultHookConfiguration } from '@livecams/mtx-manager/hooks';
 
-const hooks = busybox({ base: '/hooks', ...defaultHookConfiguration });
+const hooks = busybox({ base: 'https://example.com/hooks', ...defaultHookConfiguration });
 
 const config = {
   webrtc: true,
