@@ -69,12 +69,12 @@ app.route('/', manager({
 export default app;
 ```
 
-See examples [here]() for options with less magic where you can compose your own configuration & state management.
+See examples below for options with less magic where you can compose your own configuration & state management.
 
 
 ## Using with MediaMTX
 
-Once deployed somewhere on the internet, running a MediaMTX node can be as easy as this:
+Once your manager is deployed somewhere on the internet, running a MediaMTX node can be as easy as this:
 
 ```sh
 docker run -d \
