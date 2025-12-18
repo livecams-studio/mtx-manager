@@ -125,6 +125,8 @@ volumes:
 
 If you want to use the playback API to retrieve existing recordings, you can use another small sidecar that integrates with the manager. This uses a job system where the sidecar pulls down jobs, uploads clips to object storage and then reports back to the manager. This continues to avoid the need to expose MediaMTX to the internet.
 
+See the [Recording & Playback proposal](docs/proposals/recording-playback.md) for the composable architecture and implementation plan.
+
 ```ts
 import { manager } from '@livecams/mtx-manager/hono';
 import { s3 } from '@livecams/mtx-manager/storage';
